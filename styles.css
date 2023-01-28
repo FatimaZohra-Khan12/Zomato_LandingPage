@@ -86,12 +86,6 @@ outline: none;
 
 
 
-
-
-
-
-
-
 /* Media */
 @media only screen and (max-width:500px){
     .navbar__menu_container .user__icon{
@@ -262,9 +256,73 @@ justify-content: center;
     letter-spacing: 0.5px;
 }
 
-/* .collections h1{
-    margin: auto;
-} */
+/*--------------------------POPULAR LOCALITIES---------------------------------------------------- */
+
+.localities_nagpur{
+    width: 80%;
+    margin: 3rem auto;
+
+}
+
+.popular{
+    font-weight: 400;
+    font-size: 2.2rem;
+    padding: 2rem 2rem;
+    color: rgb(77, 73, 73);
+}
+.Nag{
+    color: black;
+    font-weight: 500;
+}
+.popular_C{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.popular_places{
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid rgb(194, 191, 191);
+    line-height: 1.4;
+    padding: 20px 10px;
+}
+.popular_places h5{
+    font-weight: 400;
+    font-size: 1rem; 
+
+}
+.popular_places p{
+    color: rgb(147, 145, 145);
+}
+.popular_places .arrow{
+    display: grid;
+    align-items: center;
+    justify-content: right;
+}
+.popular_places .see_more{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+}
+/* -------------------------------------------------------------------------------------------------------------
+-------------------------------TO MAKE POPULAR LOCALITIES SECTION RESPONSIVE------------------------------------ */
+
+@media  screen and (max-width: 900px) {
+    .popular_C{
+        grid-template-columns: repeat(2, 1fr);
+    } 
+}
+@media  screen and (max-width: 500px) {
+    .popular_C{
+        grid-template-columns: repeat(1, 1fr);
+
+    } 
+}
+
+
+
 
 .get__the_app{
     display: flex;
